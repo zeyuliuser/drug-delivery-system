@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<!-- 配置映射 -->
+<hibernate-mapping package="com.entity">
+	<class name="Custom" table="custom">
+		<id name="cid" column="CId">
+         <generator class="native">
+         </generator>
+		</id>
+		<property name="username" column="CName"></property>
+		<property name="password" column="CPassword"></property>
+		<property name="realname" column="CRName"></property>
+		<property name="cgender" column="CGender"></property>
+		<property name="phone" column="CTel"></property>
+
+	</class>
+</hibernate-mapping> 

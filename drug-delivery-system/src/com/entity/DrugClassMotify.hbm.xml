@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<!-- 配置映射 -->
+<hibernate-mapping package="com.entity">
+	<class name="DrugClassMotify" table="drugclass">
+		<id name="dcid" column="dcid">
+         <generator class="native">
+         </generator>
+		</id>
+		<property name="firstclass" column="FirstClass"></property>
+		<property name="secondclass" column="SecondClass"></property>
+		<property name="thirdclass" column="ThirdClass"></property>
+	</class>
+</hibernate-mapping> 

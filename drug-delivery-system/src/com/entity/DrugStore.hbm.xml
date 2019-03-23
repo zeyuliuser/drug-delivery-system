@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<!-- 配置映射 -->
+<hibernate-mapping package="com.entity">
+	<class name="DrugStore" table="drugstore">
+		<id name="staffid" column="StaffId">
+         <generator class="native">
+         </generator>
+		</id>
+		<property name="sname" column="SName"></property>
+		<property name="spassword" column="SPassword"></property>
+		<property name="saddress" column="SAddress"></property>
+		<property name="srname" column="SRName"></property>
+		<property name="sphone" column="SPhone"></property>
+		<property name="sgender" column="SGender"></property>
+		<property name="drugstoreid" column="DrugStoreId"></property>
+	</class>
+</hibernate-mapping>

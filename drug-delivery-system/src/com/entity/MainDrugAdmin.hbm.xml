@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<!-- 配置映射 -->
+<hibernate-mapping package="com.entity">
+	<class name="MainDrugAdmin" table="maindrugstore">
+		<id name="mid" column="MId">
+         <generator class="native"></generator>
+		</id>
+		<property name="madmin" column="MName"></property>
+		<property name="mpassword" column="MPassword"></property>
+		<property name="mrname" column="MRName"></property>
+	</class>
+</hibernate-mapping>

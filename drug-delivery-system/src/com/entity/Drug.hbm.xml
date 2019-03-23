@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<!-- 配置映射 -->
+<hibernate-mapping package="com.entity">
+	<class name="Drug" table="drug">
+		<id name="did" column="Did">
+         <generator class="native">
+         </generator>
+		</id>
+		<property name="dname" column="DName"></property>
+		<property name="size_length_cm" column="Size_length_cm"></property>
+		<property name="size_width_cm" column="Size_width_cm"></property>
+		<property name="size_high_cm" column="Size_high_cm"></property>
+		
+		<property name="firstclass" column="FirstClass"></property>
+		<property name="secondclass" column="SecondClass"></property>
+		<property name="thirdclass" column="ThirdClass"></property>
+		
+		<property name="weigth_g" column="Weigth_g"></property>
+		<property name="dpic" column="DPic"></property>
+		<property name="ddesc" column="DDesc"></property>
+		<property name="price" column="Price"></property>
+		
+		<property name="isrx" column="IsRx"></property>
+	</class>
+</hibernate-mapping>

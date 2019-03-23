@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<!-- 配置映射 -->
+<hibernate-mapping package="com.entity">
+	<class name="CustomCart" table="customcart">
+		<id name="id" column="Id">
+			<generator class="native">
+			</generator>
+		</id>
+		<property name="cid" column="CId"></property>
+		<property name="did" column="DId"></property>
+		<property name="dname" column="DName"></property>
+		<property name="num" column="Num"></property>
+		<property name="price" column="Price"></property>
+		<property name="amount" column="Amount"></property>
+
+	</class>
+</hibernate-mapping>

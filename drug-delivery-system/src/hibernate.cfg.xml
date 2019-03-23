@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+	"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+<session-factory>
+
+<!-- 
+## MySQL
+#hibernate.dialect org.hibernate.dialect.MySQLDialect
+#hibernate.dialect org.hibernate.dialect.MySQLInnoDBDialect
+#hibernate.dialect org.hibernate.dialect.MySQLMyISAMDialect
+#hibernate.connection.driver_class com.mysql.jdbc.Driver
+#hibernate.connection.url jdbc:mysql:///test
+#hibernate.connection.username gavin
+#hibernate.connection.password
+ -->
+<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+<property name="hibernate.connection.url">jdbc:mysql:///logistics</property>
+<property name="hibernate.connection.username">root</property>
+<property name="hibernate.connection.password">root</property>
+
+<!-- 
+#hibernate.show_sql true
+#hibernate.format_sql true
+ -->
+<property name="hibernate.show_sql">true</property>
+<property name="hibernate.format_sql">true</property>
+
+<!--
+ ## auto schema export
+#hibernate.hbm2ddl.auto create-drop
+#hibernate.hbm2ddl.auto create
+#hibernate.hbm2ddl.auto update
+#hibernate.hbm2ddl.auto validate -->
+
+<property name="hibernate.hbm2ddl.auto">update</property>
+
+<mapping resource="com/entity/Custom.hbm.xml"/>
+<mapping resource="com/entity/MainDrugAdmin.hbm.xml"/>
+<mapping resource="com/entity/DrugStore.hbm.xml"/>
+<mapping resource="com/entity/LogisticAdmin.hbm.xml"/>
+<mapping resource="com/entity/Drug.hbm.xml"/>
+<mapping resource="com/entity/CustomCart.hbm.xml"/>
+<mapping resource="com/entity/OrderInfo.hbm.xml"/>
+<mapping resource="com/entity/Car.hbm.xml"/>
+<mapping resource="com/entity/DrugStoreInfo.hbm.xml"/>
+<mapping resource="com/entity/CompStock.hbm.xml"/>
+<mapping resource="com/entity/DrugClassMotify.hbm.xml"/>
+</session-factory>
+</hibernate-configuration>

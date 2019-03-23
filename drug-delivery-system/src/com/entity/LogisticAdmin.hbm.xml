@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<!-- 配置映射 -->
+<hibernate-mapping package="com.entity">
+	<class name="LogisticAdmin" table="logisticadmin">
+		<id name="lid" column="LId">
+         <generator class="native">
+         </generator>
+		</id>
+		<property name="staffid" column="StaffId"></property>
+		<property name="lusername" column="LUsername"></property>
+		<property name="lpassword" column="LPassword"></property>
+		<property name="laddress" column="LAddress"></property>
+		<property name="lrname" column="LRName"></property>
+		<property name="lgender" column="LGender"></property>
+		<property name="lphone" column="LPhone"></property>
+	</class>
+</hibernate-mapping>
